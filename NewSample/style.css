@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #fff1d3;
+}
+
+/* NAV */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 100px;
+    background-color: #ffb090;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-links a:hover {
+    color: #e24b4a;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    gap: 24px;
+}
+
+.btn-container button {
+    background-color: #ff6b6b;
+    object-fit: contain;
+    width: 1100px;
+    height: 160px;
+    border-radius: 12px;
+    border: none;
+    font-size: 42px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    background-color: #e24b4a;
+}
+
+/* OVERLAY (dark background behind modal) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MODAL BOX */
+.modal {
+    background-color: white;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.modal h2 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+/* CARD ROW */
+.card-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* EACH CARD */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fafafa;
+    width: 260px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}

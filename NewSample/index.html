@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTOPIA</title>
+</head>
+<body>
+
+    <nav class="menu">
+        <h1>HEARTOPIA</h1>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+        </ul>
+    </nav>
+
+    <div class="btn-container">
+            <button id="ava_btn">Avatar</button>
+        <button id="clh_btn">Clothes</button>
+        <button id="hob_btn">Hobbies</button>
+        <button id="eve_btn">Events</button>
+    </div>
+
+
+    <!-- AVATAR MODAL -->
+    <div id="modal-avatar" class="overlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-avatar')">X</button>
+            <h2>Avatar</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Avatar 1">
+                    <p>Main character of Heartopia. Warm and full of life.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Avatar 2">
+                    <p>Casual look with a soft pastel palette.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Avatar 3">
+                    <p>Formal style for special in-game occasions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CLOTHES MODAL -->
+    <div id="modal-clothes" class="overlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-clothes')">X</button>
+            <h2>Clothes</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Outfit 1">
+                    <p>Spring Blossom — light floral dress for outdoor adventures.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Outfit 2">
+                    <p>Cozy Knit — warm sweater for chilly evenings.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Outfit 3">
+                    <p>Festival Gown — sparkly attire for celebrations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HOBBIES MODAL -->
+    <div id="modal-hobbies" class="overlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-hobbies')">X</button>
+            <h2>Hobbies</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Hobby 1">
+                    <p>Gardening — planting magical heart-shaped flowers.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Hobby 2">
+                    <p>Painting — colorful artworks that come to life.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Hobby 3">
+                    <p>Cooking — sweet treats to share with friends.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EVENTS MODAL -->
+    <div id="modal-events" class="overlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-events')">X</button>
+            <h2>Events</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Event 1">
+                    <p>Heart Festival — music, lights, and joy for all.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Event 2">
+                    <p>Harvest Moon — a seasonal gathering of crops.</p>
+                </div>
+                <div class="card">
+                    <img src="images/heartopia.jpg" alt="Event 3">
+                    <p>Winter Gala — a grand ball at the Heartopia castle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
