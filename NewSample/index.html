@@ -9,7 +9,9 @@
 <body>
 
     <nav class="menu">
-        <h1>HEARTOPIA</h1>
+        <div class="nav-left">
+            <h1>HEARTOPIA</h1>
+        </div>
         <ul class="nav-links">
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT ME</a></li>
@@ -17,10 +19,10 @@
     </nav>
 
     <div class="btn-container">
-            <button id="ava_btn">Avatar</button>
-        <button id="clh_btn">Clothes</button>
-        <button id="hob_btn">Hobbies</button>
-        <button id="eve_btn">Events</button>
+        <button id="ava_btn" class="btn-img" style="background-image: url('images/heartopia.jpg');"><span>Avatar</span></button>
+        <button id="clh_btn" class="btn-img" style="background-image: url('images/heartopia.jpg');"><span>Clothes</span></button>
+        <button id="hob_btn" class="btn-img" style="background-image: url('images/heartopia.jpg');"><span>Hobbies</span></button>
+        <button id="eve_btn" class="btn-img" style="background-image: url('images/heartopia.jpg');"><span>Events</span></button>
     </div>
 
 
@@ -46,7 +48,6 @@
         </div>
     </div>
 
-
     <!-- CLOTHES MODAL -->
     <div id="modal-clothes" class="overlay">
         <div class="modal">
@@ -68,7 +69,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- HOBBIES MODAL -->
     <div id="modal-hobbies" class="overlay">
@@ -92,7 +92,6 @@
         </div>
     </div>
 
-
     <!-- EVENTS MODAL -->
     <div id="modal-events" class="overlay">
         <div class="modal">
@@ -114,6 +113,73 @@
             </div>
         </div>
     </div>
+
+
+    <!-- PORTFOLIO / FOOTER SECTION -->
+    <div class="portfolio-box">
+
+        <!-- LEFT: Profile photo -->
+        <div class="portfolio-image">
+            <img src="images/profilePic.jpg" alt="Profile" class="profile">
+        </div>
+
+        <!-- MIDDLE: Name and description -->
+        <div class="bio">
+            <div class="name">
+                <span>JASER G. ABDULKARIM</span>
+            </div>
+            <div class="description">
+                <p>I am a Software Developer Trainee</p>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- RIGHT: Tech stack section -->
+        <!-- The title is on top, then rows of icons go below -->
+        <div class="textstack-section">
+
+            <h2 class="textstack-title">TECH STACK</h2>
+
+            <!-- ROW 1 of skill icons -->
+            <!-- Each skill-item has one image + one label -->
+            <!-- To add more icons: copy a skill-item block and paste it inside this div -->
+            <div class="skill-row">
+                <div class="skill-item">
+                    <img src="images/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/text.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <!-- PASTE MORE ICONS FOR ROW 1 HERE -->
+                <!-- Example:
+                <div class="skill-item">
+                    <img src="images/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                -->
+            </div>
+
+            <!-- ROW 2 of skill icons -->
+            <!-- Add icons here the same way as row 1 -->
+            <div class="skill-row">
+                <div class="skill-item">
+                    <img src="images/java.png" alt="JAVA"/>
+                    <p>JAVA</p>
+                </div>
+            </div>
+
+            <!-- To add more rows: copy the entire skill-row div above and paste it here -->
+
+        </div>
+
+       
+
+    </div>
+        <div class="project-section">
+            <h2>My Projects</h2>
+        </div>
 
     <script src="script.js"></script>
 </body>
