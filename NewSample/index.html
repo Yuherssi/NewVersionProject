@@ -1,154 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEARTOPIA</title>
-  </head>
-  <body>
+</head>
+<body>
+
     <nav class="menu">
-      <div class="nav-left">
-        <h1>HEARTOPIA</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#project">ABOUT ME</a></li>
-      </ul>
+        <div class="nav-left">
+            <h1>HEARTOPIA</h1>
+        </div>
+        <!-- <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+        </ul> -->
     </nav>
 
     <div class="btn-container">
-      <button
-        id="ava_btn"
-        class="btn-img"
-        style="background-image: url(&quot;images/heartopia1.jpg&quot;)"
-      >
-        <span>Avatar</span>
-      </button>
-      <button
-        id="clh_btn"
-        class="btn-img"
-        style="background-image: url(&quot;images/heartopia2.jpg&quot;)"
-      >
-        <span>Clothes</span>
-      </button>
-      <button
-        id="hob_btn"
-        class="btn-img"
-        style="background-image: url(&quot;images/heartopia3.jpg&quot;)"
-      >
-        <span>Hobbies</span>
-      </button>
-      <button
-        id="eve_btn"
-        class="btn-img"
-        style="background-image: url(&quot;images/heartopia4.jpg&quot;)"
-      >
-        <span>Events</span>
-      </button>
+        <button id="ava_btn" class="btn-img" style="background-image: url('images/heartopia1.jpg');"><span class="btn-title">AVATAR</span></button>
+        <button id="clh_btn" class="btn-img" style="background-image: url('images/heartopia2.jpg');"><span class="btn-title">CLOTHES</span></button>
+        <button id="hob_btn" class="btn-img" style="background-image: url('images/heartopia3.jpg');"><span class="btn-title">HOBBIES</span></button>
+        <button id="eve_btn" class="btn-img" style="background-image: url('images/heartopia4.jpg');"><span class="btn-title">EVENTS</span></button>
     </div>
+
 
     <!-- AVATAR MODAL -->
     <div id="modal-avatar" class="overlay">
-      <div class="modal">
-        <button class="close-btn" onclick="closeModal('modal-avatar')">
-          X
-        </button>
-        <h2>Avatar</h2>
-        <div class="card-row">
-          <div class="card">
-            <img src="images/Avatar1.jpg" alt="Avatar 1" />
-            <p>Main character of Heartopia. Warm and full of life.</p>
-          </div>
-          <div class="card">
-            <img src="images/Avatar2.jpg" alt="Avatar 2" />
-            <p>Casual look with a soft pastel palette.</p>
-          </div>
-          <div class="card">
-            <img src="images/Avatar3.jpg" alt="Avatar 3" />
-            <p>Formal style for special in-game occasions.</p>
-          </div>
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-avatar')">X</button>
+            <h2>Avatar</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/Avatar1.jpg" alt="Avatar 1">
+                    <!-- <p>Main character of Heartopia. Warm and full of life.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Avatar2.jpg" alt="Avatar 2">
+                    <!-- <p>Casual look with a soft pastel palette.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Avatar3.jpg" alt="Avatar 3">
+                    <!-- <p>Formal style for special in-game occasions.</p> -->
+                </div>
+            </div>
+            <div class="card-description">
+              <p>You can customize your </p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- CLOTHES MODAL -->
     <div id="modal-clothes" class="overlay">
-      <div class="modal">
-        <button class="close-btn" onclick="closeModal('modal-clothes')">
-          X
-        </button>
-        <h2>Clothes</h2>
-        <div class="card-row">
-          <div class="card">
-            <img src="images/Clothes1.jpg" alt="Outfit 1" />
-            <p>Spring Blossom — light floral dress for outdoor adventures.</p>
-          </div>
-          <div class="card">
-            <img src="images/Clothes2.jpg" alt="Outfit 2" />
-            <p>Cozy Knit — warm sweater for chilly evenings.</p>
-          </div>
-          <div class="card">
-            <img src="images/Clothes3.jpg" alt="Outfit 3" />
-            <p>Festival Gown — sparkly attire for celebrations.</p>
-          </div>
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-clothes')">X</button>
+            <h2>Clothes</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/Clothes1.jpg" alt="Outfit 1">
+                    <!-- <p>Spring Blossom — light floral dress for outdoor adventures.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Clothes2.jpg" alt="Outfit 2">
+                    <!-- <p>Cozy Knit — warm sweater for chilly evenings.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Clothes3.jpg" alt="Outfit 3">
+                    <!-- <p>Festival Gown — sparkly attire for celebrations.</p> -->
+                </div>
+            </div>
+            <div class="card-description">
+              <p>Hi</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- HOBBIES MODAL -->
     <div id="modal-hobbies" class="overlay">
-      <div class="modal">
-        <button class="close-btn" onclick="closeModal('modal-hobbies')">
-          X
-        </button>
-        <h2>Hobbies</h2>
-        <div class="card-row">
-          <div class="card">
-            <img src="images/Hobbies1.jpg" alt="Hobby 1" />
-            <p>Gardening — planting magical heart-shaped flowers.</p>
-          </div>
-          <div class="card">
-            <img src="images/Hobbies2.jpg" alt="Hobby 2" />
-            <p>Painting — colorful artworks that come to life.</p>
-          </div>
-          <div class="card">
-            <img src="images/Hobbies3.jpg" alt="Hobby 3" />
-            <p>Cooking — sweet treats to share with friends.</p>
-          </div>
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-hobbies')">X</button>
+            <h2>Hobbies</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/Hobbies1.jpg" alt="Hobby 1">
+                    <!-- <p>Gardening — planting magical heart-shaped flowers.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Hobbies2.jpg" alt="Hobby 2">
+                    <!-- <p>Painting — colorful artworks that come to life.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Hobbies3.jpg" alt="Hobby 3">
+                    <!-- <p>Cooking — sweet treats to share with friends.</p> -->
+                </div>
+            </div>
+            <div class="card-description">
+              <p>Hi</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- EVENTS MODAL -->
     <div id="modal-events" class="overlay">
-      <div class="modal">
-        <button class="close-btn" onclick="closeModal('modal-events')">
-          X
-        </button>
-        <h2>Events</h2>
-        <div class="card-row">
-          <div class="card">
-            <img src="images/Event1.jpg" alt="Event 1" />
-            <p>Heart Festival — music, lights, and joy for all.</p>
-          </div>
-          <div class="card">
-            <img src="images/Event2.jpg" alt="Event 2" />
-            <p>Harvest Moon — a seasonal gathering of crops.</p>
-          </div>
-          <div class="card">
-            <img src="images/Event3.jpg" alt="Event 3" />
-            <p>Winter Gala — a grand ball at the Heartopia castle.</p>
-          </div>
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('modal-events')">X</button>
+            <h2>Events</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="images/Event1.jpg" alt="Event 1">
+                    <!-- <p>Heart Festival — music, lights, and joy for all.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Event2.jpg" alt="Event 2">
+                    <!-- <p>Harvest Moon — a seasonal gathering of crops.</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/Event3.jpg" alt="Event 3">
+                    <!-- <p>Winter Gala — a grand ball at the Heartopia castle.</p> -->
+                </div>
+            </div>
+            <div class="card-description">
+              <p>Hi</p>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- PORTFOLIO / FOOTER SECTION -->
-    <div class="portfolio-box">
-      <!-- LEFT: Profile photo -->
     </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
+<footer>
+   <!-- PORTFOLIO / FOOTER SECTION -->
+    <div class="portfolio-container">
+      <div class="title-quotes-group">
+        <div class="portfolio-headers" id="title">
+          <span>H</span>
+          <span>A</span>
+          <span>T</span>
+          <span>O</span>
+        </div>
+
+        <div class="quotes">
+            <p>Hit play, no stress</p>
+            <p>AFK from worries</p>
+            <p>Take it slow</p>
+            <p>Only good vibes</p>
+        </div>
+      </div>
+
+      <div class="portfolio-headers" id="company">
+        <h3>COMPANY</h3>
+        <a href="https://www.sscgi.com/" target="_blank">SSCGI</a>
+      </div>
+
+      <div class="portfolio-headers" id="about-me">
+        <h3>ABOUT ME</h3>
+        <a href="portfolio.html" target="_blank">My Portfolio</a>
+      </div>
+      
+
+    </div>
+</footer>
 </html>
