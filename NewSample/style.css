@@ -5,7 +5,7 @@ html {
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: #fff1d3;
+  background: linear-gradient( #C6E7FF, #FFD6A6);
   overflow-x: hidden;
   overscroll-behavior: none;
 }
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   padding: 30px;
   height: 100px;
-  background-color: #ffb090;
+  background:linear-gradient(#6FE6FC, #C6E7FF);
   border-bottom: 1px solid #e5e5e5;
   position: static;
   top: 0;
