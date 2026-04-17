@@ -279,9 +279,11 @@ h1 {
 
 /* ====================== RESPONSIVE ====================== */
 
-@media (max-width: 1024px) {
-  
-  
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 6vw;
+  }
+
   .portfolio-container {
     width: auto;
     padding: 50px 60px;
@@ -296,6 +298,7 @@ h1 {
     font-size: 70px;
     letter-spacing: -6px;
     gap: 30px;
+    display: flex;
   }
 
   .headers-right {
@@ -341,6 +344,7 @@ h1 {
     font-size: 60px;
     letter-spacing: -5px;
     gap: 20px;
+    display: flex;
   }
 
   .quotes {
