@@ -88,7 +88,7 @@ body {
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 100px;
 }
 
 .hero-text h1 {
@@ -248,10 +248,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    justify-content: center;
+  }
   .hero-content {
     flex-direction: column;
     text-align: center;
     gap: 40px;
+    /* padding: 50px; */
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
   }
 
   .navigation-bar {
@@ -261,4 +271,10 @@ body {
   .nav-logo {
     font-size: 1.5rem;
   }
+
+  .projects-grid {
+    justify-content: center;
+  }
 }
+
+
